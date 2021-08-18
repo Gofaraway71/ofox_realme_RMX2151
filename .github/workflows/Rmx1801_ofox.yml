@@ -1,5 +1,5 @@
 
-name: RMX1801_OFOX 
+name: RMX2001_OFOX 
 
 on: workflow_dispatch
 
@@ -50,7 +50,7 @@ jobs:
             repo sync -j8 --force-sync --optimized-fetch --no-clone-bundle
             cd
             cd OrangeFox
-            git clone https://github.com/Gofaraway71/twrp_realme_RMX2151 device/oppo/RMX2151
+            git clone https://github.com/Gofaraway71/ofox_realme_RMX2001 device/oppo/RMX2001
             
       - name: Now Lets build Ofox
         run: |
@@ -68,9 +68,9 @@ jobs:
       - name: Uploading using Bash Upload
         run: |
             cd
-            mv OrangeFox/out/target/product/RMX1801/OrangeFox-Unofficial-RMX1801.img ~
-            mv OrangeFox/out/target/product/RMX1801/OrangeFox-Unofficial-RMX1801.zip ~
-            curl https://bashupload.com/Ofox-Unofficial.zip --data-binary @OrangeFox-Unofficial-RMX1801.zip
-            curl https://bashupload.com/Ofox-Unofficial.img --data-binary @OrangeFox-Unofficial-RMX1801.img
+            mv OrangeFox/out/target/product/RMX1801/OrangeFox-Unofficial-RMX2001.img ~
+            mv OrangeFox/out/target/product/RMX1801/OrangeFox-Unofficial-RMX2001.zip ~
+            curl https://bashupload.com/Ofox-Unofficial.zip --data-binary @OrangeFox-Unofficial-RMX2001.zip
+            curl https://bashupload.com/Ofox-Unofficial.img --data-binary @OrangeFox-Unofficial-RMX2001.img
             
             
