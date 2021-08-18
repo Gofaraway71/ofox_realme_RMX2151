@@ -50,7 +50,7 @@ jobs:
             repo sync -j8 --force-sync --optimized-fetch --no-clone-bundle
             cd
             cd OrangeFox
-            git clone https://github.com/Gofaraway71/ofox_realme_RMX2001 device/oppo/RMX2001
+            git clone https://github.com/Gofaraway71/ofox_realme_RMX2001 device/realme/RMX2001
             
       - name: Now Lets build Ofox
         run: |
