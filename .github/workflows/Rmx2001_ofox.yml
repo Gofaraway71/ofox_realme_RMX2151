@@ -62,15 +62,13 @@ jobs:
             export LC_ALL="C"
             export OF_MAINTAINER="Gofaraway71"
             export FOX_VERSION="Unofficial"
-            lunch omni_RMX1801-eng
+            lunch omni_RMX2001-eng
             mka recoveryimage
       
       - name: Uploading using Bash Upload
         run: |
             cd
-            mv OrangeFox/out/target/product/RMX1801/OrangeFox-Unofficial-RMX2001.img ~
-            mv OrangeFox/out/target/product/RMX1801/OrangeFox-Unofficial-RMX2001.zip ~
+            mv OrangeFox/out/target/product/RMX2001/OrangeFox-Unofficial-RMX2001.img ~
+            mv OrangeFox/out/target/product/RMX2001/OrangeFox-Unofficial-RMX2001.zip ~
             curl https://bashupload.com/Ofox-Unofficial.zip --data-binary @OrangeFox-Unofficial-RMX2001.zip
             curl https://bashupload.com/Ofox-Unofficial.img --data-binary @OrangeFox-Unofficial-RMX2001.img
-            
-            
