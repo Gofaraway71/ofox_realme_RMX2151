@@ -60,5 +60,5 @@ jobs:
             export LC_ALL="C"
             export OF_MAINTAINER="Gofaraway71"
             export FOX_VERSION="Unofficial"
-            lunch omni_jasmine_sprout-eng
+            lunch omni_realme_RMX2001-eng
             mka recoveryimage
