@@ -158,6 +158,7 @@ BOARD_MAIN_PARTITION_LIST := product vendor system
 
 # System as root
 BOARD_SUPPRESS_SECURE_ERASE := true
+BOARD_BUILD_SYSTEM_ROOT_IMAGE := false
 
 # Workaround for error copying vendor files to recovery ramdisk
 TARGET_COPY_OUT_VENDOR := vendor
