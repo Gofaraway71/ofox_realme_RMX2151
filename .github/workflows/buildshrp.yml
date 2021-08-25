@@ -14,8 +14,8 @@ on:
     types: [started]
 
 env:
-  #MANIFEST: https://gitlab.com/OrangeFox/Manifest.git -b fox_9.0
-  MANIFEST: https://android.googlesource.com/platform/manifest -b android-11.0.0_r29
+  MANIFEST: https://gitlab.com/OrangeFox/Manifest.git -b fox_9.0
+  #MANIFEST: https://android.googlesource.com/platform/manifest
   DEVICE: RMX2001
   DT_LINK: https://github.com/Gofaraway71/ofox_realme_RMX2001
   DT_PATH: device/realme/RMX2001
