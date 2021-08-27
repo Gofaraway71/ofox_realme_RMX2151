@@ -17,7 +17,7 @@ env:
   MANIFEST: https://gitlab.com/OrangeFox/Manifest.git
   #MANIFEST: https://android.googlesource.com/platform/manifest
   DEVICE: RMX2001
-  DT_LINK: https://github.com/Gofaraway71/ofox_realme_RMX2001
+  DT_LINK: https://gitlab.com/albatron34000/rmx-2151
   DT_PATH: device/realme/RMX2001
   TARGET: recoveryimage
   TZ: Asia/Kolkata
