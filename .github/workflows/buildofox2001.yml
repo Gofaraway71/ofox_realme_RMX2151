@@ -14,7 +14,7 @@ on:
     types: [started]
 
 env:
-  MANIFEST: https://gitlab.com/OrangeFox/Manifest.git -b fox_11.1
+  MANIFEST: https://gitlab.com/OrangeFox/Manifest.git -b fox_12.1
   #MANIFEST: https://android.googlesource.com/platform/manifest
   DEVICE: RMX2151
   DT_LINK: https://github.com/Gofaraway71/ofox_realme_RMX2151.git
@@ -51,7 +51,7 @@ jobs:
              cd sync
              git clone https://gitlab.com/OrangeFox/sync.git
              mkdir work
-             sync/./orangefox_sync.sh --branch 11.1 --path work
+             sync/./orangefox_sync.sh --branch 12.1 --path work
              git clone $DT_LINK --depth=1 --single-branch $DT_PATH
              
        - name: Build
