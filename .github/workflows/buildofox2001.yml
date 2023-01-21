@@ -48,10 +48,12 @@ jobs:
        - name: Sync recovery source and device tree
          run: |
              mkdir work
-             cd work
+             mkdir work/sync
+             mkdir work/fox_11.1
+             cd work/sync
              git clone https://gitlab.com/OrangeFox/sync.git
              cd work/sync/
-             ./orangefox_sync.sh --branch 11.0 --path ~/fox_11.1
+             ./orangefox_sync.sh --branch 11.1 --path work/fox_11.1
              git clone $DT_LINK --depth=1 --single-branch $DT_PATH
              
        - name: Build
